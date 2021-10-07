@@ -155,7 +155,7 @@
                 </path>
               </svg>
               Posts
-              <span class="Counter">0</span>
+              <span class="Counter">1</span>
             </a>
           </nav>
           <div class="profile-color-modes js-promo-color-modes-banner-profile isInitialToggle">
@@ -387,7 +387,7 @@
         </path>
       </svg>
       Posts
-      <span class="Counter ">0</span>
+      <span class="Counter ">1</span>
     </a>
   </nav>
 </div>
@@ -412,12 +412,74 @@
         </h2>
         <ol class="d-flex flex-wrap list-style-none gutter-condensed mb-4 js-pinned-items-reorder-list">
           
+          <li class="col-12 col-md-6 col-lg-6 mb-3 d-flex flex-content-stretch">
+            <div
+              class="Box pinned-item-list-item d-flex p-3 width-full js-pinned-item-list-item public source reorderable sortable-button-item">
+              <div class="pinned-item-list-item-content">
+                <div class="d-flex width-full flex-items-center position-relative">
+                  <svg class="octicon octicon-repo mr-2 text-gray flex-shrink-0" viewBox="0 0 16 16" version="1.1"
+                    width="16" height="16">
+                    <path fill-rule="evenodd"
+                      d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                    </path>
+                  </svg>
+                  <a class="text-bold flex-auto min-width-0" href="https://LLLLLLHHHHHH.github.io/post/my-first-blog/">
+                    <span class="repo" title="My First Blog">My First Blog</span>
+                  </a>
+                </div>
+
+
+                <div name="summary" class="pinned-item-desc text-gray text-small d-block mt-2 mb-3">
+                  1、Hugo简介 搭建个人搭建个人博客有很多开源的博客框架，我使用的框架是Hugo。Hugo 是一个基于Go 语言的框架，可以快速方便的创建自己的博客。
+Hugo 支持Markdown 语法，我们可以将自己的文章写成Markdown 的格式，放在我们用Hugo 创建的博客系统中，从而展示给他人。
+2、Git、Hugo安装 本人电脑操作系统为Windows 10 64位
+(1)、安装Git for Windows
+(2)、安装Hugo二进制版
+下载Hugo Windows 64位版压缩包，解压，将包含hugo.exe的目录添加到path变量，打开Git Bash，执行
+hugo version
+结果如下图所示，表示安装成功
+3、创建一个GitHub仓库 这个仓库将用于发布在Hugo上生成的博客
+4、创建Hugo站点 在Git Bash中，进入想要保存站点文件夹的路径，执行
+hugo new site myblog
+系统会生成一个名为myblog的站点工程文件夹
+目录结构如下：  archetypes/
+content/ #静态页面目录
+data/
+layouts/
+resourse/
+static/ #静态文件目录
+themes/ #主题目录
+config.toml #配置文件
+ 5、添加主题 在Hugo 主题选择一款主题（我选择的是hugo-theme-noteworthy）,将其下载到themes目录下（或者在themes目录下使用指令添加）
+然后修改根目录中的config.toml文件
+其中baseurl为要发布的GitHub网址，title为博客的名字，theme为主题的名字
+6、创建一篇博客 在根目录中执行
+hugo new posts/my-first-blog.md
+在content\posts\目录下新增了my-first-blog.md文件，使用markdown编辑器即可编辑其中的内容（我使用的是Typora）
+在发布时需要把 draft: true 改为 draft: false 或者直接删除
+7、本地服务器测试 在根目录下执行
+hugo server
+                </div>
+
+                <p class="mb-0 f6 text-gray">
+                  
+                </p>
+              </div>
+            </div>
+          </li>
+          
         </ol>
       </div>
     </div>
 
     
-    <div class="mt-4 position-relative" id="contributions" data='[]'>
+    <div class="mt-4 position-relative" id="contributions" data='[
+{
+  "title": "My%20First%20Blog",
+  "link": "https://LLLLLLHHHHHH.github.io/post/my-first-blog/",
+  "publishDate": "2021-10-07%2019:41:59"
+}
+]'>
       <div class="js-yearly-contributions">
         <div class="position-relative">
           <h2 class="f4 text-normal mb-2" id="posts-count"></h2>
